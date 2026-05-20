@@ -1,7 +1,7 @@
 .claude/
 CLAUDE.md
 requirements.md
-.wire/
+wire/
 /site/assets/cache/
 /site/assets/logs/
 /site/assets/sessions/
