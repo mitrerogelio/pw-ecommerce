@@ -55,12 +55,5 @@ $home = $pages->get('/'); /** @var HomePage $home */
     </nav>
 <?php endif; ?>
 
-<?php /*if ($page->editable()): */
-?><!--
-    <p><a href='<?php /*echo $page->editUrl(); */
-?>'>Edit this page</a></p>
---><?php /*endif; */
-?>
-
 </body>
 </html>
