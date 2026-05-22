@@ -1880,4 +1880,98 @@ ol {
         grid-template-columns: 1fr;
     }
 }
+
+/* ============================================================
+   ORDERS LIST PAGE
+============================================================ */
+
+.orders-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: var(--font-size-sm);
+}
+
+.orders-table th,
+.orders-table td {
+    padding: var(--space-3) var(--space-4);
+    text-align: left;
+    border-bottom: var(--border-width) solid var(--color-border);
+    white-space: nowrap;
+}
+
+.orders-table thead th {
+    font-size: var(--font-size-xs);
+    font-weight: var(--font-weight-semibold);
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--color-text-muted);
+    background: var(--color-bg-subtle);
+}
+
+.orders-table tbody tr:hover {
+    background: var(--color-bg-subtle);
+}
+
+.orders-table__order-col a {
+    font-weight: var(--font-weight-medium);
+    color: var(--color-accent);
+}
+
+.orders-table__order-col a:hover {
+    text-decoration: underline;
+}
+
+.orders-table__view-col {
+    text-align: right;
+}
+
+.orders-table__view-link {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-1);
+    font-size: var(--font-size-xs);
+    font-weight: var(--font-weight-medium);
+    color: var(--color-text-muted);
+    transition: color var(--transition-fast);
+}
+
+.orders-table__view-link:hover {
+    color: var(--color-accent);
+}
+
+.orders-empty {
+    color: var(--color-text-muted);
+    padding: var(--space-10) 0;
+}
+
+@media (max-width: 640px) {
+    .orders-table thead {
+        display: none;
+    }
+
+    .orders-table,
+    .orders-table tbody,
+    .orders-table tr,
+    .orders-table td {
+        display: block;
+        width: 100%;
+    }
+
+    .orders-table tr {
+        border: var(--border-width) solid var(--color-border);
+        border-radius: var(--radius-md);
+        margin-bottom: var(--space-3);
+        padding: var(--space-3);
+    }
+
+    .orders-table td {
+        border: none;
+        padding: var(--space-1) var(--space-2);
+        white-space: normal;
+    }
+
+    .orders-table__view-col {
+        text-align: left;
+        padding-top: var(--space-2);
+    }
 }

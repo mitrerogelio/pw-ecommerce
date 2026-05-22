@@ -10,3 +10,4 @@ wire/
 # System files
 .DS_Store
 Thumbs.db
+/.idea/dataSources.xml
