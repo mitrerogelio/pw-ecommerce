@@ -177,16 +177,14 @@ $suggestedProducts = pages()->find("template=product, status<" . Page::statusMax
                 <dl class="summary-list">
                     <dt>Subtotal</dt>
                     <dd><?= $cartIsEmpty ? '&mdash;' : '$' . number_format($subtotal, 2) ?></dd>
-
                     <dt>Shipping</dt>
-                    <dd>Calculated at checkout</dd>
-
+                    <dd>$5.99</dd>
                     <dt class="summary-list__total-label">Total</dt>
                     <dd class="summary-list__total-value"><?= $cartIsEmpty ? '&mdash;' : '$' . number_format($subtotal, 2) ?></dd>
                 </dl>
 
                 <a
-                        href="#"
+                        href="<?= pages()->get('template=checkout')->url ?>"
                         class="btn btn--primary btn--block"
                         <?= $cartIsEmpty ? 'aria-disabled="true" tabindex="-1"' : '' ?>
                 >Proceed to Checkout</a>
