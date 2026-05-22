@@ -1094,6 +1094,21 @@ ol {
     margin-top: var(--space-4);
 }
 
+.btn--outline {
+    background-color: transparent;
+    color: var(--color-text);
+    border: var(--border-width) solid var(--color-border);
+}
+
+.btn--outline:hover {
+    border-color: var(--color-text);
+    background-color: var(--color-bg-subtle);
+}
+
+.cart-form__update-btn {
+    margin-top: var(--space-4);
+}
+
 /* ============================================================
    PRODUCT DETAIL PAGE
 ============================================================ */
